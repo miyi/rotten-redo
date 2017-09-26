@@ -3,12 +3,13 @@ import { browserHistory } from 'react-router';
 import auth0 from 'auth0-js';
 const ID_TOKEN_KEY = 'id_token';
 
-const CLIENT_ID = '{AUTH0_CLIENT_ID}';
-const CLIENT_DOMAIN = 'AUTH0_DOMAIN';
-const REDIRECT = 'YOUR_CALLBACK_URL';
+const CLIENT_ID = '7dCLb9mEWRwz3fibvPBnakUsqQ9194ZR';
+const CLIENT_DOMAIN = 'lab406.auth0.com';
+const REDIRECT = 'http://localhost:3000/';
 const SCOPE = 'openid email profile';
-const AUDIENCE = 'https://<AUTH0_DOMAIN>/userinfo';
+const AUDIENCE = 'https://lab406.auth0.com/userinfo';
 
+//update auth service as one object
 var auth = new auth0.WebAuth({
   clientID: CLIENT_ID,
   domain: CLIENT_DOMAIN
