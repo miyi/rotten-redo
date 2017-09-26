@@ -20,7 +20,7 @@ import { requireAuth } from './utils/AuthService';
 
 
 const networkInterface = createNetworkInterface({
-  uri: 'https://api.graph.cool/simple/v1/cj4j8xezmtdvv0130l95q2gkk'
+  uri: 'https://api.graph.cool/simple/v1/cj7yfq6ji1l0701475ld267mp'
 })
 
 // For Authentication
