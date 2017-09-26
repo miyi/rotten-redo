@@ -1,4 +1,6 @@
 import React from 'react'
+
+//change into react-router-dom
 import { withRouter } from 'react-router'
 import { graphql } from 'react-apollo'
 import gql from 'graphql-tag'

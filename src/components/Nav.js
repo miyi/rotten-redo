@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+
+//change into react-router-dom
+import { Link } from 'react-router';
 import '../App.css';
 
 class Nav extends Component {
