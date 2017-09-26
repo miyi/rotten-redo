@@ -8,11 +8,12 @@ import Nav from './Nav';
 
 class CreateMovie extends React.Component {
 
-  state = {
+	state = {
     description: '',
     imageUrl: '',
     avgRating: 0,
-  }
+    reviewer: localStorage.getItem('userId')
+	}
 
   render () {
     return (

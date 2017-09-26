@@ -1,3 +1,4 @@
+//update auth service as one object
 import decode from 'jwt-decode';
 import { browserHistory } from 'react-router';
 import auth0 from 'auth0-js';
@@ -9,7 +10,6 @@ const REDIRECT = 'http://localhost:3000/callback';
 const SCOPE = 'openid email profile';
 const AUDIENCE = 'https://lab406.auth0.com/userinfo';
 
-//update auth service as one object
 var auth = new auth0.WebAuth({
   clientID: CLIENT_ID,
   domain: CLIENT_DOMAIN

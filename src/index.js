@@ -2,17 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import ListMovie from './components/ListMovie'
 import CreateMovie from './components/CreateMovie'
-import Callback from './components/Callback'
-
-//update react-router
-//change broswerHistory into History?
 import { Router, Route, browserHistory } from 'react-router'
-
-//merge Apollo-client and react-apollo
 import ApolloClient, { createNetworkInterface } from 'apollo-client'
 import { ApolloProvider } from 'react-apollo'
-
-
 import 'tachyons'
 import './index.css';
 import registerServiceWorker from './registerServiceWorker';

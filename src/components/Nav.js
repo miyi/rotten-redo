@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-
-//upgrade reactrouter
 import { Link } from 'react-router';
 import { login, logout, isLoggedIn } from '../utils/AuthService';
 import '../App.css';

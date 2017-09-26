@@ -1,5 +1,5 @@
 # project: cj7yfq6ji1l0701475ld267mp
-# version: 2
+# version: 5
 
 type User implements Node {
   id: ID! @isUnique
@@ -8,6 +8,7 @@ type User implements Node {
   movies: [Movie!]! @relation(name: "MovieReviewer")
   createdAt: DateTime!
   updatedAt: DateTime!
+  auth0UserId: String @isUnique
 }
 
 type Movie implements Node {
@@ -15,7 +16,7 @@ type Movie implements Node {
   description: String!
   imageUrl: String!
   avgRating: Int!
-  reviewer: User @relation(name: "MovieReviewer")
+  reviewer: User! @relation(name: "MovieReviewer")
   updatedAt: DateTime!
   createdAt: DateTime!
 }
