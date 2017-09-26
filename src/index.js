@@ -2,9 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import ListMovie from './components/ListMovie'
 import CreateMovie from './components/CreateMovie'
+import Callback from './components/Callback'
 
-//change react-router to react-router-dom
-//change broswerHistory into History
+//update react-router
+//change broswerHistory into History?
 import { Router, Route, browserHistory } from 'react-router'
 
 //merge Apollo-client and react-apollo
@@ -44,7 +45,8 @@ ReactDOM.render((
   <ApolloProvider client={client}>
     <Router history={browserHistory}>
       <Route path='/' component={ListMovie} />
-      <Route path='/create' component={CreateMovie} />
+      <Route path='/create' component={CreateMovie} onEnter={requireAuth} />
+      <Route path="/callback" component={Callback} />
     </Router>
   </ApolloProvider>
   ), document.getElementById('root'));

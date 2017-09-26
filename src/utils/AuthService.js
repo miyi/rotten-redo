@@ -5,7 +5,7 @@ const ID_TOKEN_KEY = 'id_token';
 
 const CLIENT_ID = '7dCLb9mEWRwz3fibvPBnakUsqQ9194ZR';
 const CLIENT_DOMAIN = 'lab406.auth0.com';
-const REDIRECT = 'http://localhost:3000/';
+const REDIRECT = 'http://localhost:3000/callback';
 const SCOPE = 'openid email profile';
 const AUDIENCE = 'https://lab406.auth0.com/userinfo';
 
